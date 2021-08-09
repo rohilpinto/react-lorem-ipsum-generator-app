@@ -10,6 +10,14 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 button {
   font-family: "Roboto", sans-serif;
 }
@@ -21,6 +29,8 @@ button {
   align-items: center;
   font-family: "Roboto", sans-serif;
   background-color: $brown;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   color: $white;
+  padding: 9px;
 }

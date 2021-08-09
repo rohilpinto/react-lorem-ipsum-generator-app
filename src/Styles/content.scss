@@ -1,14 +1,16 @@
 @use './variables.scss' as *;
 
-.content-container p {
+.content-container {
   max-width: 600px;
   width: 100%;
-  // margin: 20px;
-  text-align: center;
-
-  background-color: $white;
+}
+.content-container p {
   color: $brown;
+  max-width: 600px;
+  width: auto;
+  margin: 20px;
   padding: 15px;
   border-radius: $bdrs-5;
-  margin: 10px;
+  background-color: $white;
+  text-align: center;
 }

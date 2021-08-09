@@ -23,6 +23,9 @@
   padding: 10px 20px;
   display: flex;
   align-items: center;
+  &:hover {
+    background-color: #ad66e0;
+  }
 }
 
 .user-input-container {
@@ -40,6 +43,7 @@
     font-size: 20px;
     background-color: $brown;
     color: $white;
+    padding: 10px;
   }
 }
 
@@ -74,4 +78,12 @@
 
 .inputs {
   margin: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .user-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
