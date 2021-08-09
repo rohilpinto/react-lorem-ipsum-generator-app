@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.scss";
 
-function App() {
+// Component Imports
+import Input from "./Components/Input";
+import data from "./data.js";
+import Content from "./Components/Content";
+
+const App = () => {
+  const [number, setNumber] = useState(0);
+  const [filterData, setFilterData] = useState([]);
+
+  // console.log(filterData);
+  // console.log(filterData);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="title-wrapper">
+        <h1>Generate Lorem Ipsum</h1>
+      </div>
+      <Input number={number} setNumber={setNumber} filterData={filterData} setFilterData={setFilterData} data={data}></Input>
+
+      <Content filterData={filterData} setFilterData={setFilterData}></Content>
+      <br />
     </div>
   );
-}
+};
 
 export default App;

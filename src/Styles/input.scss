@@ -1,0 +1,77 @@
+@use './variables.scss' as *;
+
+.user-input {
+  display: flex;
+
+  justify-content: center;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  // width: 70%;
+}
+
+.input-container {
+  // padding: 10px 25px 0;
+  font-size: 20px;
+  background-color: $pink;
+  border-radius: $bdrs-5;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.user-input-container {
+  label {
+    margin-right: 15px;
+    color: $white;
+    font-weight: 500;
+  }
+
+  input {
+    border: none;
+    width: 60px;
+    height: 35px;
+    // padding: 20px;
+    font-size: 20px;
+    background-color: $brown;
+    color: $white;
+  }
+}
+
+.user-submit {
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  background: $pink;
+  border-radius: $bdrs-5;
+  &:hover {
+    background-color: #ad66e0;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+  button {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    img {
+      width: 25px;
+    }
+  }
+}
+
+.inputs {
+  margin: 10px;
+}
